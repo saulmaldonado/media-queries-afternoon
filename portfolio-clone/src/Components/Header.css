@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    color: white
+}
+
+img{
+    display: none;
+}
+
+nav{
+    background-color: rgb(29, 29, 29);
+}
+
+
+header {
+    background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+#nav-bar{
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+    transition: .3s;
+
+}
+
+#small-nav-bar{
+
+    background-color: rgb(46, 46, 46);
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 5vh;
+    transition: .3s;
+
+}
+
+
+
+#title{
+    align-self: center;
+    font-family: Kaushan Script;
+    font-size: 28px;
+    color: #fed136;
+
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#nav-links li {
+    margin-left: 30px;
+    align-self: center;
+    font-family: Montserrat;
+    font-size: 15px;
+
+}
+
+#nav-links li:hover {
+    color:#fed136
+}
+
+#menu-icon{
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+#welcome{
+
+    font-size: 40px;
+
+    font-family: "Droid Serif";
+
+    font-style: italic;
+}
+
+#nice {
+    margin-top: 30px;
+
+    font-size: 75px;
+    text-align:  center;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+#tell{
+    margin-top: 30px;
+
+    border:none;
+    background-color: #fed136;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+
+@media (max-width: 1000px){
+
+    #nav-bar{
+        z-index: 2;
+
+        position: fixed;
+        top: 0px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        transition: .3s;
+        background-color:rgb(58, 58, 58);
+    
+    }
+
+
+    #nav-links{
+        display: none;
+    }
+
+    #menu-icon{
+        
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 10px;
+        height: 60px;
+        width: 100px;
+        border: none;
+        background-color: #fed136;
+        align-self: center;
+        border-radius: 5px;
+
+    }
+    img{
+        display: block;
+        height: 25px;
+        width: 25px;
+    }
+
+    #mini-list{
+        z-index: 1;
+        position: relative;
+        top: 170px;
+        list-style: none;
+        text-align: right;
+        padding-top: 30px;
+        padding-right: 150px;
+        background-color:rgb(58, 58, 58);
+        padding-bottom: 20px;
+        animation: openMenu .3s forwards linear;
+        font-family: Montserrat;
+
+    }
+
+    #mini-list li {
+        margin-bottom: 10px;
+    }
+    #no-mini-list{
+
+        font-family: Montserrat;
+        position: relative;
+        top: 0px;
+            list-style: none;
+            text-align: right;
+            padding-right: 150px;
+            background-color:rgb(58, 58, 58);
+            padding-bottom: 20px;
+            animation: closeMenu .3s forwards linear;
+    
+    }
+
+}
+
+@keyframes openMenu {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 170px
+    }
+}
+
+@keyframes closeMenu {
+    from {
+        top: 170px;
+    }
+    to {
+        top: 0px
+    }
+}
+
+body{
+    height: 1000px;
+}
