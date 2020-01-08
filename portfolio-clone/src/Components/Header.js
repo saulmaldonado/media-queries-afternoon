@@ -46,7 +46,7 @@ export default class Header extends React.Component{
                             <li>TEAM</li>
                             <li>CONTACT</li>
                         </ul>
-                        <button id='menu-icon' onClick={this.showList}> Menu
+                        <button id='menu-icon' onClick={this.showList}> MENU
                             <img src='https://www.pngkey.com/png/full/332-3321462_mobile-menu-for-barefoot-resort-vacations-hamburger-menu.png' />
                         </button>
                     </div>
@@ -60,7 +60,7 @@ export default class Header extends React.Component{
                 </nav>
 
                 <main>
-                    <div id='welcome'>Welcome To Out Studio!</div>
+                    <div id='welcome'>Welcome To Our Studio!</div>
                     <div id='nice'>IT'S NICE TO MEET YOU</div>
                     <button id='tell'>TELL ME MORE</button>
                 </main>
